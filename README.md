@@ -1,0 +1,1 @@
+# staz-sevenstone-template

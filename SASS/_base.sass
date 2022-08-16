@@ -1,0 +1,39 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+    font-family: $font
+
+.wrapper
+    max-width: 1012px
+    margin: 0 auto
+    overflow: hidden
+    +mq(large)
+        padding: 0 10px
+
+.line
+    position: relative
+    margin: 100px 0
+    text-align: center
+    &__strap
+        border: 1.5px solid #0C3F39
+        width: 100%
+        // &--widthMedium
+        //     width: 35%
+    &__img
+        +triangle
+        position: relative
+        top: -2px
+        // left: 50%
+        // transform: translateX(-50%)
+        // &--right
+        //     transform: rotate(-90deg)
+        //     left: 35%
+        // &--left
+        //     transform: rotate(90deg)
+        //     left: 75%
+
+

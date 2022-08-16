@@ -1,1 +1,96 @@
-/*# sourceMappingURL=main.css.map */
+@import url("http://fonts.cdnfonts.com/css/mont");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Mont", arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 1012px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 1048px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}
+
+.line {
+  position: relative;
+  margin: 100px 0;
+  text-align: center;
+}
+.line__strap {
+  border: 1.5px solid #0C3F39;
+  width: 100%;
+}
+.line__img {
+  width: 23.5px;
+  height: 16.75px;
+  position: relative;
+  top: -2px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 125px;
+}
+.menu__logo-link {
+  margin-right: auto;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.menu__sidebar {
+  display: none;
+}
+.menu__sidebar-triangle-down {
+  width: 23.5px;
+  height: 16.75px;
+}
+.menu__item-text {
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #093E38;
+  padding: 10px 12.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu__item-text:hover {
+  color: #ADDBE2;
+}
+.menu__item-text--paddingRightBigger {
+  padding-right: 25px;
+}
+.menu__item-text--btn {
+  padding: 10px 30px;
+  background-color: #ADDBE2;
+  color: #fff;
+}
+.menu__item-text--btn:hover {
+  color: #fff;
+  background-color: #093E38;
+}
+
+.footer {
+  display: grid;
+  background-color: #0C3F39;
+  width: 100%;
+  height: 20px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+.menu
+    display: flex
+    align-items: center
+    margin-top: 125px
+    &__logo-link
+        margin-right: auto
+    &__list
+        display: flex
+        list-style: none
+    &__sidebar
+        display: none
+        &-triangle-down
+            +triangle
+    &__item
+        &-text
+            font-weight: 800
+            font-size: 1.5rem
+            text-decoration: none
+            color: $main-color
+            padding: 10px 12.5px
+            transition: 0.3s
+            &:hover
+                color: $btn-color
+            &--paddingRightBigger
+                padding-right: 25px
+            &--btn
+                padding: 10px 30px
+                background-color: $btn-color
+                color: #fff
+                &:hover
+                    color: #fff
+                    background-color: $main-color

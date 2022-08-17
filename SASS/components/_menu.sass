@@ -2,8 +2,13 @@
     display: flex
     align-items: center
     margin-top: 125px
+    &--vertical
+        flex-direction: column
+        margin-top: 65px
     &__logo-link
         margin-right: auto
+        &--margin
+            margin: 0 auto 25px auto
     &__list
         display: flex
         list-style: none
@@ -30,3 +35,5 @@
                 &:hover
                     color: #fff
                     background-color: $main-color
+            &--color
+                color: $bgc-color

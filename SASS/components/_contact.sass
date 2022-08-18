@@ -1,0 +1,59 @@
+.contact
+    margin-bottom: 180px
+    color: $main-color
+    &__title
+        font-weight: 400
+        font-size: 6rem
+        text-align: center
+        margin-bottom: 50px
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        &-item
+            font-size: 1.6rem
+            font-weight: 600
+            width: 494px
+            border: 2px solid $bgc-color
+            padding: 15px 0 15px 30px
+            margin-bottom: 25px
+            &::placeholder
+                color: $main-color
+                opacity: 1
+            &:-ms-input-placeholder
+                color: $main-color
+            &::-ms-input-placeholder
+                color: $main-color
+            &--widthBigger
+                width: 100%
+                min-height: 185px
+                font-size: 1.6rem
+                font-weight: 600
+                font-family: $font
+    &__info
+        font-size: 1.5rem
+        font-weight: 600
+        // color: $main-color
+        margin-right: auto
+    &__social-media
+        font-size: 2.4rem
+        line-height: 60px
+        text-align: center
+        width: 60px
+        height: 60px
+        background-color: $bgc-color
+        margin-right: 10px
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+            color: $bgc-color
+            background-color: $main-color
+    &__btn
+        height: 60px
+        font-size: 1.5rem
+        font-weight: 800
+        border: none
+        padding: 0 80px
+        margin-left: 20px
+        +btn

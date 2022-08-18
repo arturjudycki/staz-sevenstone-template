@@ -156,12 +156,11 @@ html {
 .loan-options__subtitle {
   font-size: 3rem;
   font-weight: 800;
-  width: 300px;
   margin-right: 35px;
 }
 .loan-options__text {
   font-size: 1.6rem;
-  max-width: 602px;
+  width: 602px;
 }
 .loan-options__container {
   display: -webkit-box;

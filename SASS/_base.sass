@@ -13,8 +13,6 @@ html
     overflow: hidden
     padding: 0 5px
 
-    +mq(large)
-
 .line
     position: relative
     margin: 100px 0
@@ -22,19 +20,14 @@ html
     &__strap
         border: 1.5px solid #0C3F39
         width: 100%
-        // &--widthMedium
-        //     width: 35%
     &__img
         +triangle
         position: relative
         top: -2px
-        // left: 50%
-        // transform: translateX(-50%)
-        // &--right
-        //     transform: rotate(-90deg)
-        //     left: 35%
-        // &--left
-        //     transform: rotate(90deg)
-        //     left: 75%
-
+        &--rotate
+            transform: rotate(180deg)
+            top: -17px
+    &--medium
+        width: 324px
+        margin: 25px 0
 

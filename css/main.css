@@ -17,6 +17,7 @@ html {
   overflow: hidden;
   padding: 0 5px;
 }
+
 .line {
   position: relative;
   margin: 100px 0;
@@ -31,6 +32,15 @@ html {
   height: 16.75px;
   position: relative;
   top: -2px;
+}
+.line__img--rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: -17px;
+}
+.line--medium {
+  width: 324px;
+  margin: 25px 0;
 }
 
 .menu {
@@ -214,8 +224,101 @@ html {
   background-color: #7dd2dd;
 }
 
+.leadershipers__title {
+  max-width: 600px;
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #093E38;
+  margin: 0 auto;
+}
+.leadershipers__text {
+  font-size: 1.6rem;
+  max-width: 740px;
+  text-align: center;
+  color: #093E38;
+  margin: 15px auto 0;
+}
+.leadershipers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .leadershipers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 324px;
+}
+.leadershipers__item:last-of-type {
+  margin: 0 auto;
+}
+.leadershipers__image {
+  margin-top: 110px;
+}
+.leadershipers__space {
+  width: 324px;
+  height: 19px;
+  background-color: #D4E5CE;
+  margin-left: 1px;
+  margin-top: -5px;
+}
+.leadershipers__name {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 42px;
+}
+.leadershipers__role {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.leadershipers__description {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.leadershipers__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+.leadershipers__phone {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #093E38;
+  margin-right: auto;
+}
+.leadershipers__icon {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #D4E5CE;
+  margin-left: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.leadershipers__icon:hover {
+  background-color: #c1dfb5;
 }
 
 .footer {

@@ -134,6 +134,56 @@ html {
   color: #D4E5CE;
 }
 
+.header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #093E38;
+}
+.header-section__title {
+  font-size: 12.4rem;
+  line-height: 12.4rem;
+  font-weight: 400;
+}
+.header-section__subtitle {
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+.header-section__image {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.interest-rates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 800;
+  font-size: 1.44rem;
+  color: #093E38;
+}
+.interest-rates__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.interest-rates__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.interest-rates__item--bigger {
+  font-size: 1.53rem;
+}
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,10 +216,12 @@ html {
 .about__title {
   max-width: 400px;
   font-size: 3.4rem;
+  line-height: 3.6rem;
   font-weight: 900;
   color: #D4E5CE;
 }
 .about__text {
+  margin-top: 10px;
   font-size: 1.6rem;
 }
 .about__info-box {

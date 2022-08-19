@@ -1,10 +1,40 @@
 .about
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    color: $main-color
     &__img
         &-building-box
             width: 324px
             height: 418px
             background-image: url('../img/home-images/home-2.jpg')
+            background-position: 48% 0
+            background-size: cover
+            margin-bottom: 95px
         &-sevenstone-box
             width: 582px
             height: 457px
             background-image: url('../img/home-images/home-3.jpg')
+            background-position: 82% 0
+            background-size: cover
+    &__container
+        max-width: 608px
+    &__title
+        max-width: 400px
+        font-size: 3.4rem
+        font-weight: 900
+        color: $bgc-color
+    &__text
+        font-size: 1.6rem
+    &__info
+        &-box
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 324px
+            background-color: $bgc-color
+        &-text
+            font-size: 2.5rem
+            font-weight: 700
+            line-height: 31.5px
+            padding: 60px 30px 0 50px

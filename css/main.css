@@ -38,6 +38,22 @@ html {
           transform: rotate(180deg);
   top: -17px;
 }
+.line__img--rotateRight {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: calc(100% - 3px);
+  top: -8.3725px;
+}
+.line__img--rotateLeft {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -19.75px;
+  top: -8.3725px;
+}
+.line--small {
+  width: 213px;
+  margin: 25px 0 35px;
+}
 .line--xmedium {
   width: 238px;
   margin: 35px 0 0;
@@ -45,6 +61,10 @@ html {
 .line--medium {
   width: 324px;
   margin: 25px 0;
+}
+.line--large {
+  text-align: left;
+  width: 344px;
 }
 
 .menu {
@@ -114,15 +134,73 @@ html {
   color: #D4E5CE;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #093E38;
+}
 .about__img-building-box {
   width: 324px;
   height: 418px;
   background-image: url("../img/home-images/home-2.jpg");
+  background-position: 48% 0;
+  background-size: cover;
+  margin-bottom: 95px;
 }
 .about__img-sevenstone-box {
   width: 582px;
   height: 457px;
   background-image: url("../img/home-images/home-3.jpg");
+  background-position: 82% 0;
+  background-size: cover;
+}
+.about__container {
+  max-width: 608px;
+}
+.about__title {
+  max-width: 400px;
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #D4E5CE;
+}
+.about__text {
+  font-size: 1.6rem;
+}
+.about__info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 324px;
+  background-color: #D4E5CE;
+}
+.about__info-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 31.5px;
+  padding: 60px 30px 0 50px;
+}
+
+.deals__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .loan-options {
@@ -169,7 +247,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 45px 0 110px;
+  margin: 50px 0 110px;
 }
 .loan-options__box {
   display: -webkit-box;

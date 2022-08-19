@@ -165,7 +165,9 @@ html {
   display: flex;
   font-weight: 800;
   font-size: 1.44rem;
+  text-transform: uppercase;
   color: #093E38;
+  margin-top: 55px;
 }
 .interest-rates__list {
   display: -webkit-box;
@@ -175,15 +177,40 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 280px;
+  margin-right: 24px;
 }
 .interest-rates__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #D4E5CE;
 }
 .interest-rates__item--bigger {
   font-size: 1.53rem;
 }
+.interest-rates__item--color {
+  color: #D4E5CE;
+}
+.interest-rates__text {
+  padding: 7px 0;
+}
+.interest-rates__text--transformNone {
+  text-transform: none;
+}
+.interest-rates__text--marginLeft {
+  margin-left: 45px;
+}
+.interest-rates__text--marginRight-48px {
+  margin-right: 48px;
+}
+.interest-rates__text--marginRight-40px {
+  margin-right: 40px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;

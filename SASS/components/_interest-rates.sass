@@ -2,12 +2,29 @@
     display: flex
     font-weight: 800
     font-size: 1.44rem
+    text-transform: uppercase
     color: $main-color
+    margin-top: 55px
     &__list
         display: flex
         flex-direction: column
+        width: 280px
+        margin-right: 24px
     &__item
         display: flex
+        justify-content: space-between
+        border-bottom: 1px solid $bgc-color
         &--bigger
             font-size: 1.53rem
+        &--color
+            color: $bgc-color
     &__text
+        padding: 7px 0
+        &--transformNone
+            text-transform: none
+        &--marginLeft
+            margin-left: 45px
+        &--marginRight-48px
+            margin-right: 48px
+        &--marginRight-40px
+            margin-right: 40px

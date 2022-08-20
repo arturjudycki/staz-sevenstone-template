@@ -41,13 +41,13 @@ html {
 .line__img--rotateRight {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  left: calc(100% - 3px);
+  left: calc(100% - 4px);
   top: -8.3725px;
 }
 .line__img--rotateLeft {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  left: -19.75px;
+  left: -18.75px;
   top: -8.3725px;
 }
 .line--small {
@@ -270,6 +270,59 @@ html {
   padding: 60px 30px 0 50px;
 }
 
+.deals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #093E38;
+}
+.deals--vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.deals__card {
+  max-width: 760px;
+  font-size: 1.6rem;
+  margin-bottom: 80px;
+}
+.deals__card--marginBottom-0px {
+  text-align: center;
+  margin: 0 auto;
+}
+.deals__title {
+  max-width: 600px;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 6.48rem;
+}
+.deals__title--center {
+  margin: 0 auto;
+}
+.deals__text {
+  margin: 20px 0;
+}
+.deals__subtitle {
+  font-weight: 900;
+}
+.deals__container {
+  display: grid;
+}
 .deals__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,6 +333,23 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.deals__link {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #093E38;
+  text-decoration: none;
+  border: 2px solid #093E38;
+  padding: 10px 25px;
+  margin-top: -20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.deals__link:hover {
+  color: #fff;
+  background-color: #093E38;
 }
 
 .loan-options {
@@ -326,6 +396,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 50px 0 110px;
 }
 .loan-options__box {
@@ -498,8 +571,7 @@ html {
   width: 324px;
   height: 19px;
   background-color: #D4E5CE;
-  margin-left: 1px;
-  margin-top: -5px;
+  margin-top: -2px;
 }
 .leadershipers__name {
   font-size: 2rem;

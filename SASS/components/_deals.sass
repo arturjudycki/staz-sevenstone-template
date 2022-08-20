@@ -1,5 +1,51 @@
 .deals
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    color: $main-color
+    &--vertical
+        flex-direction: column
+        justify-content: flex-start
+        align-items: stretch
+    &__icon
+    &__card
+        max-width: 760px
+        font-size: 1.6rem
+        margin-bottom: 80px
+        &--marginBottom-0px
+            text-align: center
+            margin: 0 auto
+    &__title
+        max-width: 600px
+        font-size: 6rem
+        font-weight: 400
+        line-height: 6.48rem
+        &--center
+            margin: 0 auto
+    &__text
+        margin: 20px 0
+    &__subtitle
+        font-weight: 900
+    &__container
+        display: grid
+    &__item
+    &__price
+    &__info
     &__box
         display: flex
         justify-content: space-between
         align-items: center
+        flex-basis: 100%
+    &__link
+        font-size: 1.5rem
+        font-weight: 800
+        color: $main-color
+        text-decoration: none
+        border: 2px solid $main-color
+        padding: 10px 25px
+        margin-top: -20px
+        transition: 0.3s
+        &:hover
+            color: #fff
+            background-color: $main-color

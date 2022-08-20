@@ -28,7 +28,8 @@
     &__subtitle
         font-weight: 900
     &__container
-        display: grid
+        // display: grid
+        display: flex
     &__item
     &__price
     &__info
@@ -49,3 +50,55 @@
         &:hover
             color: #fff
             background-color: $main-color
+    &__btn
+        +btn
+        font-size: 1.5rem
+        font-weight: 800
+        border: none
+        padding: 10px 20px
+        &--wider
+            width: 173px
+    &__filtration
+        margin: 0 auto
+    &__pagination
+        margin: 0 auto
+        &-box
+            display: flex
+            max-width: 173px
+            justify-content: space-between
+            margin: 10px 0 130px
+        &-previous
+            position: relative
+            width: 40px
+            height: 40px
+            border: 2px solid $bgc-color
+            transition: 0.2s
+            cursor: pointer
+            &:hover
+                border: 2px solid $main-color
+        &-content
+            width: 78px
+            font-size: 1.5rem
+            font-weight: 800
+            line-height: 36px
+            text-align: center
+            margin: 0 6.25px
+            border: 2px solid $bgc-color
+        &-next
+            position: relative
+            width: 40px
+            height: 40px
+            border: 2px solid $bgc-color
+            transition: 0.2s
+            cursor: pointer
+            &:hover
+                border: 2px solid $main-color
+    &__triangle-icon
+        position: absolute
+        width: 12px
+        height: 17px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+

@@ -128,7 +128,7 @@ html {
 }
 .menu__item-text--btn:hover {
   color: #fff;
-  background-color: #7dd2dd;
+  background-color: #093E38;
 }
 .menu__item-text--color {
   color: #D4E5CE;
@@ -321,7 +321,9 @@ html {
   font-weight: 900;
 }
 .deals__container {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .deals__box {
   display: -webkit-box;
@@ -350,6 +352,82 @@ html {
 .deals__link:hover {
   color: #fff;
   background-color: #093E38;
+}
+.deals__btn {
+  background-color: #ADDBE2;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: none;
+  padding: 10px 20px;
+}
+.deals__btn:hover {
+  color: #fff;
+  background-color: #093E38;
+}
+.deals__btn--wider {
+  width: 173px;
+}
+.deals__filtration {
+  margin: 0 auto;
+}
+.deals__pagination {
+  margin: 0 auto;
+}
+.deals__pagination-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 173px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0 130px;
+}
+.deals__pagination-previous {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #D4E5CE;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.deals__pagination-previous:hover {
+  border: 2px solid #093E38;
+}
+.deals__pagination-content {
+  width: 78px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 6.25px;
+  border: 2px solid #D4E5CE;
+}
+.deals__pagination-next {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #D4E5CE;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.deals__pagination-next:hover {
+  border: 2px solid #093E38;
+}
+.deals__triangle-icon {
+  position: absolute;
+  width: 12px;
+  height: 17px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .loan-options {
@@ -523,7 +601,7 @@ html {
 }
 .contact__btn:hover {
   color: #fff;
-  background-color: #7dd2dd;
+  background-color: #093E38;
 }
 
 .leadershipers__title {

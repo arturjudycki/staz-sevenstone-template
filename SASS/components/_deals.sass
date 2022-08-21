@@ -28,11 +28,33 @@
     &__subtitle
         font-weight: 900
     &__container
-        // display: grid
-        display: flex
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        column-gap: 20px
+        row-gap: 70px
+        width: 100%
+        margin-bottom: 60px
     &__item
+        position: relative
     &__price
+        position: absolute
+        top: 65%
+        left: 0
+        width: 148px
+        font-size: 1.6rem
+        font-weight: 900
+        color: $main-color
+        background-color: $bgc-color
+        padding: 12px 0 12px 18px
     &__info
+        position: absolute
+        width: 100%
+        bottom: -17%
+        font-size: 1.5rem
+        font-weight: 600
+        color: $bgc-color
+        background-color: $main-color
+        padding: 12px 0 20px 18px
     &__box
         display: flex
         justify-content: space-between
@@ -56,12 +78,13 @@
         font-weight: 800
         border: none
         padding: 10px 20px
+        margin-right: 5px
         &--wider
             width: 173px
     &__filtration
-        margin: 0 auto
+        margin: 0 auto 35px
     &__pagination
-        margin: 0 auto
+        margin: 40px auto 0
         &-box
             display: flex
             max-width: 173px
@@ -100,5 +123,3 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-
-

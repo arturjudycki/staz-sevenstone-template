@@ -601,7 +601,14 @@ html {
 .loan-options__bgc {
   position: relative;
   background-image: url("../img/home-images/loan-options.png");
+  background-position: 50% 50%;
+  background-size: cover;
   margin-bottom: 100px;
+}
+@media (max-width: 640px) {
+  .loan-options__bgc {
+    height: 100px;
+  }
 }
 .loan-options__title {
   position: relative;
@@ -615,6 +622,14 @@ html {
   color: #fff;
   background-color: #D4E5CE;
 }
+@media (max-width: 640px) {
+  .loan-options__title {
+    max-width: 205px;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 15px 20px;
+  }
+}
 .loan-options__info-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -623,14 +638,32 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media (max-width: 640px) {
+  .loan-options__info-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .loan-options__subtitle {
   font-size: 3rem;
   font-weight: 800;
   margin-right: 35px;
 }
+@media (max-width: 640px) {
+  .loan-options__subtitle {
+    margin-bottom: 15px;
+  }
+}
 .loan-options__text {
   font-size: 1.6rem;
   width: 602px;
+}
+@media (max-width: 640px) {
+  .loan-options__text {
+    width: 100%;
+  }
 }
 .loan-options__container {
   display: -webkit-box;
@@ -643,6 +676,29 @@ html {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 50px 0 110px;
+}
+@media (max-width: 1024px) {
+  .loan-options__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 550px;
+    margin: 50px auto 20px;
+  }
+}
+@media (max-width: 580px) {
+  .loan-options__container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .loan-options__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .loan-options__box {
   display: -webkit-box;
@@ -658,12 +714,33 @@ html {
           align-items: center;
   width: 238px;
 }
+@media (max-width: 1024px) {
+  .loan-options__box {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 580px) {
+  .loan-options__box {
+    width: 168px;
+  }
+}
+@media (max-width: 400px) {
+  .loan-options__box {
+    width: 150px;
+    margin-right: 10px;
+  }
+}
 .loan-options__icon {
   margin-right: 15px;
 }
 .loan-options__icon-name {
   font-size: 1.6rem;
   font-weight: 800;
+}
+@media (max-width: 580px) {
+  .loan-options__icon-name {
+    font-size: 1.5rem;
+  }
 }
 
 .contact {

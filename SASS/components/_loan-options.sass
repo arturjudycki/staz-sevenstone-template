@@ -3,7 +3,11 @@
     &__bgc
         position: relative
         background-image: url('../img/home-images/loan-options.png')
+        background-position: 50% 50%
+        background-size: cover
         margin-bottom: 100px
+        +mq(small)
+            height: 100px
     &__title
         position: relative
         top: 32px
@@ -15,29 +19,58 @@
         padding: 30px 40px
         color: #fff
         background-color: $bgc-color
+        +mq(small)
+            max-width: 205px
+            font-size: 4rem
+            line-height: 4rem
+            padding: 15px 20px
     &__info-box
         display: flex
         justify-content: flex-end
+        +mq(small)
+            flex-direction: column
     &__subtitle
         font-size: 3rem
         font-weight: 800
         margin-right: 35px
+        +mq(small)
+            margin-bottom: 15px
     &__text
         font-size: 1.6rem
         width: 602px
+        +mq(small)
+            width: 100%
     &__container
         display: flex
         justify-content: space-between
         align-items: flex-end
         margin: 50px 0 110px
+        +mq(large)
+            flex-wrap: wrap
+            justify-content: space-evenly
+            width: 550px
+            margin: 50px auto 20px
+        +mq(xsmall)
+            max-width: 400px
+        +mq(xxxsmall)
+            justify-content: flex-start
     &__box
         display: flex
         flex-wrap: wrap
         justify-content: center
         align-items: center
         width: 238px
+        +mq(large)
+            margin-bottom: 50px
+        +mq(xsmall)
+            width: 168px
+        +mq(xxxsmall)
+            width: 150px
+            margin-right: 10px
     &__icon
         margin-right: 15px
         &-name
             font-size: 1.6rem
             font-weight: 800
+            +mq(xsmall)
+                font-size: 1.5rem

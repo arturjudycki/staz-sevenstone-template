@@ -2,17 +2,43 @@
     display: flex
     position: relative
     color: $main-color
+    +mq(xmedium)
+        margin-bottom: 250px
     &__title
         font-size: 12.4rem
         line-height: 12.4rem
         font-weight: 400
+        +mq(large)
+            font-size: 10rem
+            line-height: 10rem
+        +mq(small)
+            font-size: 5.5rem
+            line-height: 5.5rem
+        +mq(xxxsmall)
+            font-size: 4.5rem
+            line-height: 4.5rem
     &__subtitle
         position: absolute
         top: 40%
         left: 36%
         font-size: 1.9rem
         font-weight: 800
+        +mq(large)
+            left: 40%
+        +mq(xmedium)
+            font-size: 1.6rem
+            top: 130%
+            left: 0
+        +mq(small)
+            top: 150%
+        +mq(xxxsmall)
+            top: 180%
     &__image
         position: absolute
         right: 0
         z-index: -1
+        +mq(large)
+            width: 250px
+        +mq(small)
+            width: 169px
+            height: 310px

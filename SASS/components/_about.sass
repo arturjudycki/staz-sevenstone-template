@@ -11,20 +11,37 @@
             background-position: 48% 0
             background-size: cover
             margin-bottom: 95px
+            +mq(large)
+                width: 100%
+                height: 208px
+                background-position: 0 38%
+                margin-bottom: 55px
         &-sevenstone-box
             width: 582px
             height: 457px
             background-image: url('../img/home-images/home-3.jpg')
             background-position: 82% 0
             background-size: cover
+            +mq(large)
+                margin-top: 90px
+                width: 100%
+                height: 204px
+                background-position: 0 30%
+            +mq(small)
+                background-position: 0 40%
     &__container
         max-width: 608px
+        +mq(large)
+            max-width: 100%
     &__title
         max-width: 400px
         font-size: 3.4rem
         line-height: 3.6rem
         font-weight: 900
         color: $bgc-color
+        +mq(large)
+            max-width: 100%
+            margin-bottom: 30px
     &__text
         margin-top: 10px
         font-size: 1.6rem
@@ -35,6 +52,8 @@
             justify-content: center
             max-width: 324px
             background-color: $bgc-color
+            +mq(large)
+                max-width: 100%
         &-text
             font-size: 2.5rem
             font-weight: 700

@@ -18,8 +18,10 @@ html
     margin: 100px 0
     text-align: center
     &__strap
-        border: 1.5px solid #0C3F39
+        border: 1.5px solid $main-color
         width: 100%
+        &--footer
+            border-color: $bgc-color
     &__img
         +triangle
         position: relative
@@ -35,6 +37,12 @@ html
             transform: rotate(90deg)
             left: -18.75px
             top: -8.3725px
+    &--xsmall
+        width: 177px
+        margin: 30px auto 0
+        display: none
+        +mq(xmedium)
+            display: block
     &--small
         width: 213px
         margin: 25px 0 35px

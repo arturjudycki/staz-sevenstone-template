@@ -5,13 +5,23 @@
     &--vertical
         flex-direction: column
         margin: 65px 0 0
+        +mq(xmedium)
+            order: -1
     &__logo-link
         margin-right: auto
         &--margin
             margin: 0 auto 25px auto
+    &__logo-image
+        &--footer
+            +mq(xmedium)
+                width: 182px
+                height: 21px
     &__list
         display: flex
         list-style: none
+        &--footer
+            +mq(xmedium)
+                display: none
     &__sidebar
         display: none
         &-triangle-down

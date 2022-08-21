@@ -1,16 +1,22 @@
 .contact
     margin-bottom: 180px
     color: $main-color
+    +mq(xmedium)
+        margin-bottom: 80px
     &__title
         font-weight: 400
         font-size: 6rem
         text-align: center
         margin-bottom: 50px
+        +mq(xmedium)
+            font-size: 3rem
     &__form
         display: flex
         flex-wrap: wrap
         justify-content: space-between
         align-items: center
+        +mq(xmedium)
+            justify-content: flex-start
         &-item
             font-size: 1.6rem
             font-weight: 600
@@ -18,6 +24,9 @@
             border: 2px solid $bgc-color
             padding: 15px 0 15px 30px
             margin-bottom: 25px
+            +mq(large)
+                width: 100%
+                margin-bottom: 15px
             &::placeholder
                 color: $main-color
                 opacity: 1
@@ -26,7 +35,7 @@
             &::-ms-input-placeholder
                 color: $main-color
             &--widthBigger
-                width: 100%
+                min-width: 100%
                 min-height: 185px
                 font-size: 1.6rem
                 font-weight: 600
@@ -35,6 +44,10 @@
         font-size: 1.5rem
         font-weight: 600
         margin-right: auto
+        +mq(large)
+            font-size: 1.3rem
+        +mq(xmedium)
+            display: none
     &__social-media
         font-size: 2.4rem
         line-height: 60px
@@ -45,14 +58,27 @@
         margin-right: 10px
         cursor: pointer
         transition: 0.3s
+        +mq(xxsmall)
+            font-size: 2rem
+            width: 50px
+            height: 50px
+            line-height: 50px
+        +mq(xxxsmall)
+            margin: 0 auto
         &:hover
             color: $bgc-color
             background-color: $main-color
     &__btn
+        +btn
         height: 60px
         font-size: 1.5rem
         font-weight: 800
         border: none
         padding: 0 80px
         margin-left: 20px
-        +btn
+        +mq(xmedium)
+            margin-left: auto
+        +mq(xxsmall)
+            height: 50px
+        +mq(xxxsmall)
+            margin: 10px auto 0

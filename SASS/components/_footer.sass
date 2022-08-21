@@ -13,12 +13,18 @@
     &__form
         display: flex
         margin-bottom: 55px
+        +mq(xmedium)
+            font-size: 1.5rem
+            flex-direction: column
+            align-items: center
         &-item
             height: 50px
             width: 400px
             padding: 13px 0 13px 30px
             font-size: 1.6rem
             border: none
+            +mq(xmedium)
+                width: 285px
             &::placeholder
                 color: #CFCFCF
                 opacity: 1
@@ -37,10 +43,28 @@
             margin-left: -5px
             transition: 0.2s
             cursor: pointer
+            +mq(xmedium)
+                margin: 10px 0 0
             &:hover
                 color: $bgc-color
                 background-color: $main-color
                 border: 2px solid $bgc-color
                 margin-left: 5px
+                +mq(xmedium)
+                    margin-left: 0
+    &__address
+        +mq(xmedium)
+            order: -1
+            font-size: 1.5rem
+            text-align: center
+        &-new-line
+            display: none
+            +mq(xmedium)
+                display: block
+        &-separator
+            +mq(xmedium)
+                display: none
     &__company
         margin: 10px 0 80px
+        +mq(xmedium)
+            margin-bottom: 55px

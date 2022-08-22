@@ -26,9 +26,15 @@ html
         +triangle
         position: relative
         top: -2px
+        &--smaller
+            width: 13px
+            height: 9px
+            top: -3px
         &--rotateUp
             transform: rotate(180deg)
             top: -17px
+        &--marginTop
+            top: -10px
         &--rotateRight
             transform: rotate(-90deg)
             left: calc(100% - 4px)
@@ -48,6 +54,14 @@ html
         margin: 25px 0 35px
         +mq(large)
             width: calc(100% - 80px)
+    &--xxmedium
+        display: none
+        +mq(xmedium)
+            display: block
+            width: 228px
+            margin: 20px 0 0
+    &--marginTop
+        margin-top: 0
     &--xmedium
         width: 238px
         margin: 35px 0 0

@@ -1,7 +1,10 @@
 .menu
     display: flex
+    flex-wrap: wrap
     align-items: center
     margin: 125px 0 130px
+    +mq(xmedium)
+        margin: 45px 0 60px
     &--vertical
         flex-direction: column
         margin: 65px 0 0
@@ -12,21 +15,48 @@
         &--margin
             margin: 0 auto 25px auto
     &__logo-image
+        &--main
+            +mq(small)
+                width: 169px
+                height: 20px
         &--footer
             +mq(xmedium)
                 width: 182px
                 height: 21px
+    &__sidebar-triangle-down
+        display: none
+        +mq(xmedium)
+            +triangle
+            display: block
+            margin-right: 20px
+            cursor: pointer
+            &--rotateUp
+                +mq(xmedium)
+                    transform: rotate(180deg)
+            &--rotateRight
+                +mq(xmedium)
+                    transform: rotate(-90deg)
     &__list
         display: flex
+        flex-wrap: wrap
         list-style: none
+        +mq(xmedium)
+            display: none
+        &--display
+            +mq(xmedium)
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                margin-top: 95px
         &--footer
             +mq(xmedium)
                 display: none
-    &__sidebar
-        display: none
-        &-triangle-down
-            +triangle
     &__item
+        &--display
+            display: none
+            +mq(xmedium)
+                display: block
         &-text
             font-weight: 800
             font-size: 1.5rem
@@ -34,6 +64,12 @@
             color: $main-color
             padding: 10px 12.5px
             transition: 0.3s
+            cursor: pointer
+            &--uppercase
+                text-transform: uppercase
+            +mq(xmedium)
+                display: flex
+                justify-content: center
             &:hover
                 color: $btn-color
             &--paddingRightBigger
@@ -42,5 +78,8 @@
                 padding: 10px 30px
                 background-color: $btn-color
                 +btn
+                +mq(xmedium)
+                    width: 50%
+                    margin: 40px auto 35px
             &--color
                 color: $bgc-color

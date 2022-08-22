@@ -357,15 +357,40 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 800;
   font-size: 1.44rem;
   text-transform: uppercase;
   color: #093E38;
   margin-top: 55px;
 }
+.interest-rates--menu {
+  display: none;
+}
+@media (max-width: 460px) {
+  .interest-rates--menu {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 860px) {
-  .interest-rates--display {
+  .interest-rates--displayNone {
     display: none;
+  }
+}
+@media (max-width: 860px) {
+  .interest-rates--displayFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
 }
 .interest-rates__list {
@@ -379,6 +404,9 @@ html {
   width: 280px;
   margin-right: 24px;
 }
+.interest-rates__list--marginBottom {
+  margin-bottom: 40px;
+}
 .interest-rates__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +418,11 @@ html {
 }
 .interest-rates__item--bigger {
   font-size: 1.53rem;
+}
+@media (max-width: 460px) {
+  .interest-rates__item--bigger {
+    font-size: 1.2rem;
+  }
 }
 .interest-rates__item--color {
   color: #D4E5CE;
@@ -408,6 +441,22 @@ html {
 }
 .interest-rates__text--marginRight-40px {
   margin-right: 40px;
+}
+.interest-rates__btn {
+  background-color: #ADDBE2;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: none;
+  padding: 10px 30px;
+  margin: 40px;
+}
+.interest-rates__btn:hover {
+  color: #fff;
+  background-color: #093E38;
 }
 
 .about {

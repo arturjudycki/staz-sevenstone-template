@@ -6,6 +6,8 @@
         text-align: center
         color: $main-color
         margin: 0 auto
+        +mq(small)
+            font-size: 3rem
     &__text
         font-size: 1.6rem
         max-width: 740px
@@ -16,6 +18,8 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        +mq(large)
+            justify-content: space-evenly
     &__item
         display: flex
         flex-direction: column

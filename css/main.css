@@ -23,6 +23,11 @@ html {
   margin: 100px 0;
   text-align: center;
 }
+@media (max-width: 580px) {
+  .line {
+    margin: 60px 0;
+  }
+}
 .line__strap {
   border: 1.5px solid #093E38;
   width: 100%;
@@ -102,7 +107,27 @@ html {
 }
 .line--large {
   text-align: left;
-  width: 344px;
+  width: 32%;
+}
+@media (max-width: 768px) {
+  .line--large {
+    width: 25%;
+  }
+}
+@media (max-width: 580px) {
+  .line--large {
+    width: 20%;
+  }
+}
+@media (max-width: 460px) {
+  .line--large {
+    width: 15%;
+  }
+}
+@media (max-width: 400px) {
+  .line--large {
+    width: 10%;
+  }
 }
 
 .menu {
@@ -162,6 +187,8 @@ html {
     height: 16.75px;
     display: block;
     margin-right: 20px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
     cursor: pointer;
   }
 }
@@ -581,6 +608,11 @@ html {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+@media (max-width: 1024px) {
+  .deals__icon {
+    display: none;
+  }
+}
 .deals__card {
   max-width: 760px;
   font-size: 1.6rem;
@@ -596,14 +628,25 @@ html {
   font-weight: 400;
   line-height: 6.48rem;
 }
-.deals__title--center {
+.deals__title--transactions {
   margin: 0 auto;
+}
+@media (max-width: 580px) {
+  .deals__title--transactions {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
 }
 .deals__text {
   margin: 20px 0;
 }
 .deals__subtitle {
   font-weight: 900;
+}
+@media (max-width: 580px) {
+  .deals__subtitle--transactions {
+    display: none;
+  }
 }
 .deals__container {
   display: grid;
@@ -612,11 +655,34 @@ html {
      -moz-column-gap: 20px;
           column-gap: 20px;
   row-gap: 70px;
-  width: 100%;
   margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .deals__container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 580px) {
+  .deals__container {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .deals__container {
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+  }
 }
 .deals__item {
   position: relative;
+}
+@media (max-width: 580px) {
+  .deals__img {
+    width: 169px;
+    height: 200px;
+  }
 }
 .deals__price {
   position: absolute;
@@ -629,6 +695,11 @@ html {
   background-color: #D4E5CE;
   padding: 12px 0 12px 18px;
 }
+@media (max-width: 580px) {
+  .deals__price {
+    padding: 10px 0 10px 13px;
+  }
+}
 .deals__info {
   position: absolute;
   width: 100%;
@@ -639,6 +710,12 @@ html {
   color: #D4E5CE;
   background-color: #093E38;
   padding: 12px 0 20px 18px;
+}
+@media (max-width: 580px) {
+  .deals__info {
+    font-size: 1.2rem;
+    padding: 10px 0 10px 13px;
+  }
 }
 .deals__box {
   display: -webkit-box;
@@ -693,6 +770,11 @@ html {
 .deals__pagination {
   margin: 40px auto 0;
 }
+@media (max-width: 580px) {
+  .deals__pagination {
+    display: none;
+  }
+}
 .deals__pagination-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,6 +826,30 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+.deals__btn-more {
+  display: none;
+  background-color: #ADDBE2;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.deals__btn-more:hover {
+  color: #fff;
+  background-color: #093E38;
+}
+@media (max-width: 580px) {
+  .deals__btn-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 10px 30px;
+    width: 100px;
+    margin: 30px auto 60px;
+  }
 }
 
 .loan-options {
@@ -1066,6 +1172,11 @@ html {
   color: #093E38;
   margin: 0 auto;
 }
+@media (max-width: 640px) {
+  .leadershipers__title {
+    font-size: 3rem;
+  }
+}
 .leadershipers__text {
   font-size: 1.6rem;
   max-width: 740px;
@@ -1082,6 +1193,13 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .leadershipers__container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 .leadershipers__item {
   display: -webkit-box;

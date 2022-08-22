@@ -9,6 +9,8 @@
         justify-content: flex-start
         align-items: stretch
     &__icon
+        +mq(large)
+            display: none
     &__card
         max-width: 760px
         font-size: 1.6rem
@@ -21,21 +23,37 @@
         font-size: 6rem
         font-weight: 400
         line-height: 6.48rem
-        &--center
+        &--transactions
             margin: 0 auto
+            +mq(xsmall)
+                font-size: 3rem
+                line-height: 3.2rem
     &__text
         margin: 20px 0
     &__subtitle
         font-weight: 900
+        &--transactions
+            +mq(xsmall)
+                display: none
     &__container
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr
         column-gap: 20px
         row-gap: 70px
-        width: 100%
         margin-bottom: 60px
+        +mq(large)
+            grid-template-columns: 1fr 1fr
+            margin: 0 auto 60px
+        +mq(xsmall)
+            row-gap: 40px
+        +mq(xxxsmall)
+            column-gap: 5px
     &__item
         position: relative
+    &__img
+        +mq(xsmall)
+            width: 169px
+            height: 200px
     &__price
         position: absolute
         bottom: 17%
@@ -46,6 +64,8 @@
         color: $main-color
         background-color: $bgc-color
         padding: 12px 0 12px 18px
+        +mq(xsmall)
+            padding: 10px 0 10px 13px
     &__info
         position: absolute
         width: 100%
@@ -56,6 +76,9 @@
         color: $bgc-color
         background-color: $main-color
         padding: 12px 0 20px 18px
+        +mq(xsmall)
+            font-size: 1.2rem
+            padding: 10px 0 10px 13px
     &__box
         display: flex
         justify-content: space-between
@@ -86,6 +109,8 @@
         margin: 0 auto 35px
     &__pagination
         margin: 40px auto 0
+        +mq(xsmall)
+            display: none
         &-box
             display: flex
             max-width: 173px
@@ -124,3 +149,13 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
+    &__btn-more
+        display: none
+        +btn
+        +mq(xsmall)
+            display: flex
+            font-size: 1.5rem
+            font-weight: 800
+            padding: 10px 30px
+            width: 100px
+            margin: 30px auto 60px

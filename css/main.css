@@ -28,6 +28,11 @@ html {
     margin: 60px 0;
   }
 }
+@media (max-width: 460px) {
+  .line--displayNone {
+    display: none;
+  }
+}
 .line__strap {
   border: 1.5px solid #093E38;
   width: 100%;
@@ -64,6 +69,11 @@ html {
           transform: rotate(90deg);
   left: -18.75px;
   top: -8.3725px;
+}
+@media (max-width: 460px) {
+  .line__img--displayNone {
+    display: none;
+  }
 }
 .line--xsmall {
   width: 177px;
@@ -104,6 +114,11 @@ html {
 .line--medium {
   width: 324px;
   margin: 25px 0;
+}
+@media (max-width: 460px) {
+  .line--medium {
+    margin: 10px 0;
+  }
 }
 .line--large {
   text-align: left;
@@ -1020,6 +1035,11 @@ html {
     font-size: 3rem;
   }
 }
+@media (max-width: 460px) {
+  .contact__title {
+    margin-top: 70px;
+  }
+}
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1210,12 +1230,18 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 324px;
+  color: #093E38;
 }
 .leadershipers__item:last-of-type {
   margin: 0 auto;
 }
 .leadershipers__image {
   margin-top: 110px;
+}
+@media (max-width: 460px) {
+  .leadershipers__image {
+    margin-top: 30px;
+  }
 }
 .leadershipers__space {
   width: 324px;
@@ -1224,6 +1250,7 @@ html {
   margin-top: -2px;
 }
 .leadershipers__name {
+  position: relative;
   font-size: 2rem;
   font-weight: 800;
   margin-top: 42px;
@@ -1233,9 +1260,50 @@ html {
   font-weight: 800;
   margin-bottom: 15px;
 }
+.leadershipers__angle-down {
+  display: none;
+}
+@media (max-width: 460px) {
+  .leadershipers__angle-down {
+    display: block;
+    position: absolute;
+    font-size: 4rem;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+  }
+  .leadershipers__angle-down--displayNone {
+    display: none;
+  }
+}
+.leadershipers__angle-up {
+  display: none;
+}
+@media (max-width: 460px) {
+  .leadershipers__angle-up {
+    position: absolute;
+    font-size: 4rem;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+  }
+  .leadershipers__angle-up--displayBlock {
+    display: block;
+  }
+}
 .leadershipers__description {
   font-size: 1.6rem;
   margin-bottom: 30px;
+}
+@media (max-width: 460px) {
+  .leadershipers__description {
+    display: none;
+  }
+  .leadershipers__description--displayFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .leadershipers__box {
   display: -webkit-box;
@@ -1249,10 +1317,19 @@ html {
           align-items: center;
   margin-top: auto;
 }
+@media (max-width: 460px) {
+  .leadershipers__box {
+    display: none;
+  }
+  .leadershipers__box--displayFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .leadershipers__phone {
   font-size: 2rem;
   font-weight: 800;
-  color: #093E38;
   margin-right: auto;
 }
 .leadershipers__icon {

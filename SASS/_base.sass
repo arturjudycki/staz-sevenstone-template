@@ -19,6 +19,9 @@ html
     text-align: center
     +mq(xsmall)
         margin: 60px 0
+    &--displayNone
+        +mq(xxsmall)
+            display: none
     &__strap
         border: 1.5px solid $main-color
         width: 100%
@@ -44,6 +47,9 @@ html
             transform: rotate(90deg)
             left: -18.75px
             top: -8.3725px
+        &--displayNone
+            +mq(xxsmall)
+                display: none
     &--xsmall
         width: 177px
         margin: 30px auto 0
@@ -69,6 +75,8 @@ html
     &--medium
         width: 324px
         margin: 25px 0
+        +mq(xxsmall)
+            margin: 10px 0
     &--large
         text-align: left
         width: 32%

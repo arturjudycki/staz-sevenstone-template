@@ -56,6 +56,57 @@ window.addEventListener("resize", function () {
 
 //open drop down - leadership page
 
+let angleDownIcon = document.querySelectorAll(".leadershipers__angle-down");
+let angleUpIcon = document.querySelectorAll(".leadershipers__angle-up");
+let leaderDesc = document.querySelectorAll(".leadershipers__description");
+let leaderBox = document.querySelectorAll(".leadershipers__box");
+
+for (let i = 0; i < angleDownIcon.length; i++) {
+  angleDownIcon[i].addEventListener("click", function(){
+    angleDownIcon[i].classList.toggle("leadershipers__angle-down--displayNone");
+    angleUpIcon[i].classList.toggle("leadershipers__angle-up--displayBlock");
+    leaderDesc[i].classList.toggle("leadershipers__description--displayFlex");
+    leaderBox[i].classList.toggle("leadershipers__box--displayFlex");
+  }, false);
+}
+
+for (let i = 0; i < angleUpIcon.length; i++) {
+  angleUpIcon[i].addEventListener(
+    "click",
+    function () {
+      angleDownIcon[i].classList.toggle(
+        "leadershipers__angle-down--displayNone"
+      );
+      angleUpIcon[i].classList.toggle("leadershipers__angle-up--displayBlock");
+      leaderDesc[i].classList.toggle("leadershipers__description--displayFlex");
+      leaderBox[i].classList.toggle("leadershipers__box--displayFlex");
+    },
+    false
+  );
+}
+
+window.addEventListener("resize", function () {
+  for(let i = 0; i < angleDownIcon.length; i++){
+    if(angleDownIcon[i].classList.contains("leadershipers__angle-down--displayNone") && window.innerWidth > 460){
+      angleDownIcon[i].classList.remove("leadershipers__angle-down--displayNone");
+      angleUpIcon[i].classList.remove("leadershipers__angle-up--displayBlock");
+      leaderDesc[i].classList.remove("leadershipers__description--displayFlex");
+      leaderBox[i].classList.remove("leadershipers__box--displayFlex");
+    }
+  }
+})
+
+//   if (
+//     window.innerWidth > 460 &&
+//     angleDownIcon.classList.contains("leadershipers__angle-down--displayNone")
+//   ) {
+//     angleDownIcon.classList.remove("leadershipers__angle-down--displayNone");
+//     angleUpIcon.classList.remove("leadershipers__angle-up--displayBlock");
+//     leaderDesc.classList.remove("leadershipers__description--displayFlex");
+//     leaderBox.classList.remove("leadershipers__box--displayFlex");
+//   }
+// });
+
 //filter open - transactions page
 
 //animation on scroll

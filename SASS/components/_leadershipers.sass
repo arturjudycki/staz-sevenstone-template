@@ -24,18 +24,20 @@
         display: flex
         flex-direction: column
         width: 324px
+        color: $main-color
         &:last-of-type
             margin: 0 auto
     &__image
-        // width: 324px
-        // height: 295px
         margin-top: 110px
+        +mq(xxsmall)
+            margin-top: 30px
     &__space
         width: 324px
         height: 19px
         background-color: $bgc-color
         margin-top: -2px
     &__name
+        position: relative
         font-size: 2rem
         font-weight: 800
         margin-top: 42px
@@ -43,18 +45,46 @@
         font-size: 2rem
         font-weight: 800
         margin-bottom: 15px
+    &__angle-down
+        display: none
+        +mq(xxsmall)
+            display: block
+            position: absolute
+            font-size: 4rem
+            top: 10%
+            right: 10%
+            cursor: pointer
+            &--displayNone
+                display: none
+    &__angle-up
+        display: none
+        +mq(xxsmall)
+            position: absolute
+            font-size: 4rem
+            top: 10%
+            right: 10%
+            cursor: pointer
+            &--displayBlock
+                display: block
     &__description
         font-size: 1.6rem
         margin-bottom: 30px
+        +mq(xxsmall)
+            display: none
+            &--displayFlex
+                display: flex
     &__box
         display: flex
         justify-content: space-between
         align-items: center
         margin-top: auto
+        +mq(xxsmall)
+            display: none
+            &--displayFlex
+                display: flex
     &__phone
         font-size: 2rem
         font-weight: 800
-        color: $main-color
         margin-right: auto
     &__icon
         width: 36px

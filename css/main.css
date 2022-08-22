@@ -39,7 +39,6 @@ html {
 .line__img--smaller {
   width: 13px;
   height: 9px;
-  top: -3px;
 }
 .line__img--rotateUp {
   -webkit-transform: rotate(180deg);
@@ -218,6 +217,7 @@ html {
 @media (max-width: 860px) {
   .menu__item--display {
     display: block;
+    margin: 0 auto;
   }
 }
 .menu__item-text {

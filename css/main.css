@@ -823,7 +823,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 190px;
+  width: 200px;
   font-size: 1.5rem;
   font-weight: 800;
   color: #093E38;
@@ -841,6 +841,10 @@ html {
 .deals__filtration-choice {
   color: #fff;
   background-color: #093E38;
+}
+.deals__filtration-choice:checked {
+  color: #093E38;
+  background-color: #D4E5CE;
 }
 .deals__pagination {
   margin: 40px auto 0;

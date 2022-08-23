@@ -127,7 +127,7 @@
         &-filter
             appearance: none
             display: flex
-            width: 190px
+            width: 200px
             font-size: 1.5rem
             font-weight: 800
             color: $main-color
@@ -143,6 +143,9 @@
         &-choice
             color: #fff
             background-color: $main-color
+            &:checked
+                color: $main-color
+                background-color: $bgc-color
     &__pagination
         margin: 40px auto 0
         +mq(xsmall)

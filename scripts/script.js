@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu__list");
 const ratesBtn = document.querySelector(".menu__item-text-live");
 const ratesSection = document.querySelector(".interest-rates--menu");
 const ratesBackBtn = document.querySelector(".interest-rates__btn");
+
 // sidebar menu
 
 triangleBurger.addEventListener("click", function () {
@@ -96,17 +97,12 @@ window.addEventListener("resize", function () {
   }
 })
 
-//   if (
-//     window.innerWidth > 460 &&
-//     angleDownIcon.classList.contains("leadershipers__angle-down--displayNone")
-//   ) {
-//     angleDownIcon.classList.remove("leadershipers__angle-down--displayNone");
-//     angleUpIcon.classList.remove("leadershipers__angle-up--displayBlock");
-//     leaderDesc.classList.remove("leadershipers__description--displayFlex");
-//     leaderBox.classList.remove("leadershipers__box--displayFlex");
-//   }
-// });
-
 //filter open - transactions page
+
+const filter = document.querySelector(".deals__filtration-filter");
+
+filter.addEventListener("click", function(){
+  filter.classList.toggle("deals__filtration-filter--rotateArrow");
+})
 
 //animation on scroll

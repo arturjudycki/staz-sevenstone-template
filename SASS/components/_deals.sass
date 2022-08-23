@@ -103,10 +103,46 @@
         border: none
         padding: 10px 20px
         margin-right: 5px
+        &--display
+            +mq(xmedium)
+                margin-bottom: 8px
+            +mq(xsmall)
+                display: none
         &--wider
             width: 173px
     &__filtration
         margin: 0 auto 35px
+        +mq(xmedium)
+            text-align: center
+            max-width: 450px
+        &-selection
+            display: none
+            +mq(xsmall)
+                width: 350px
+                display: flex
+                justify-content: space-around
+                align-items: center
+                font-size: 1.5rem
+                font-weight: 800
+        &-filter
+            appearance: none
+            display: flex
+            width: 190px
+            font-size: 1.5rem
+            font-weight: 800
+            color: $main-color
+            border: none
+            padding: 5px 0 5px 10px
+            background: url('../img/deals-images/arrow-down.png') no-repeat
+            background-position: 95% 90%
+            background-color: #F0F0F0
+            &--rotateArrow
+                background: url('../img/deals-images/arrow-up.png') no-repeat
+                background-position: 95% 40%
+                background-color: #F0F0F0
+        &-choice
+            color: #fff
+            background-color: $main-color
     &__pagination
         margin: 40px auto 0
         +mq(xsmall)

@@ -1,5 +1,9 @@
 .loan-options
     color: $main-color
+    transition: 1s
+    transform: translate(-100%)
+    &.on-scroll
+        transform: translate(0)
     &__bgc
         position: relative
         background-image: url('../img/home-images/loan-options.png')

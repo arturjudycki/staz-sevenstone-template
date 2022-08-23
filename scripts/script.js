@@ -99,10 +99,9 @@ window.addEventListener("resize", function () {
 
 //filter open - transactions page
 
-const filter = document.querySelector(".deals__filtration-filter");
+// const filter = document.querySelector(".deals__filtration-filter");
 
-filter.addEventListener("click", function(){
-  filter.classList.toggle("deals__filtration-filter--rotateArrow");
-})
+// filter.addEventListener("click", function(){
+//   filter.classList.toggle("deals__filtration-filter--rotateArrow");
+// })
 
-//animation on scroll

@@ -18,6 +18,10 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        transition: 1s
+        transform: translateY(20%)
+        &.on-scroll
+            transform: translateY(0)
         +mq(large)
             justify-content: space-evenly
     &__item

@@ -3,6 +3,10 @@
     flex-wrap: wrap
     justify-content: space-between
     color: $main-color
+    transition: 0.7s
+    transform: scale(0)
+    &.on-scroll
+        transform: scale(1)
     &__img
         &-building-box
             width: 324px

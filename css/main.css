@@ -511,6 +511,14 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #093E38;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.about.on-scroll {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .about__img-building-box {
   width: 324px;
@@ -610,6 +618,18 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #093E38;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+}
+.deals--translate0 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.deals.on-scroll {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 .deals--vertical {
   -webkit-box-orient: vertical;
@@ -671,6 +691,16 @@ html {
           column-gap: 20px;
   row-gap: 70px;
   margin-bottom: 60px;
+}
+.deals__container--translate {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+}
+.deals__container--translate.on-scroll {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 @media (max-width: 1024px) {
   .deals__container {
@@ -792,6 +822,16 @@ html {
 .deals__filtration {
   margin: 0 auto 35px;
 }
+.deals__filtration--translate {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(115%);
+          transform: translate(115%);
+}
+.deals__filtration--translate.on-scroll {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
 @media (max-width: 860px) {
   .deals__filtration {
     text-align: center;
@@ -848,6 +888,16 @@ html {
 }
 .deals__pagination {
   margin: 40px auto 0;
+}
+.deals__pagination--translate {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(400%);
+          transform: translate(400%);
+}
+.deals__pagination--translate.on-scroll {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 @media (max-width: 580px) {
   .deals__pagination {
@@ -933,6 +983,14 @@ html {
 
 .loan-options {
   color: #093E38;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+.loan-options.on-scroll {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 .loan-options__bgc {
   position: relative;
@@ -1277,6 +1335,14 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+.leadershipers__container.on-scroll {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 @media (max-width: 1024px) {
   .leadershipers__container {
@@ -1428,6 +1494,14 @@ html {
   color: #fff;
   background-color: #0C3F39;
   width: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.footer.on-scroll {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .footer__newsletter-info {
   max-width: 444px;
